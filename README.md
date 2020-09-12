@@ -1,1 +1,0 @@
-es-theme-batocera-club
