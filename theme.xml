@@ -1,0 +1,481 @@
+<!--
+BATOCERA CLUB
+Theme Mod By SNAKERVILL & The Mini Cake TV : https://www.youtube.com/channel/UCJdquk3Rr_nZVLEc9JryhAA
+
+Original
+Theme name: Retrobat-Roleta
+creator: Lorenzolamas
+Foked by Lorenzolamas of the original theme => see infos below.
+1.1
+
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>7</formatVersion>
+   
+
+	
+<!------------------------------>
+	
+	<include>./_inc/icons/menuicons.xml</include>
+	<include>./_inc/menu/menu.xml</include>
+
+
+<!------------------>
+
+	<view name="system, basic, detailed, video">
+		<image name="logo">
+			<path>./${system.theme}/_inc/system.png</path>
+		</image>
+	</view>
+	<view name="system,basic">		
+      <image name="system-background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <tile>false</tile>
+         <path>./${system.theme}/_inc/background.png</path>
+         <zIndex>1</zIndex>          
+      </image>  
+  
+
+	</view>
+	
+
+<!--
+Clock position
+-->
+
+<view name="screen">
+<text name="clock">
+
+		<fontSize>0.03</fontSize>
+		<color>ffffff</color>
+		<fontPath>./_inc/fonts/gomarice_no_continue.ttf</fontPath>
+		<pos>0.935 0.030</pos>
+		<size>0.05 0.058</size>
+		<verticalAlignment>right</verticalAlignment>
+		</text>
+</view>
+<!--
+Carousel wheel and main menu background
+-->
+
+
+<feature supported="carousel">
+	<view name="system">
+
+	<image name="background" extra="true">
+        <linearSmooth>true</linearSmooth>
+        </image>
+		
+			<carousel name="systemcarousel">
+		<type>vertical_wheel</type>
+		<pos>0 0</pos>
+		<size>1 1</size>
+		<origin>0 0</origin>
+		<color>00000000</color>
+		<logoScale>1.4</logoScale>
+        <logoSize>0.200 0.160</logoSize>
+		<logoRotation>6.5</logoRotation>
+		<logoRotationOrigin>-4.1 0.5</logoRotationOrigin>
+		<logoAlignment>left</logoAlignment>
+		<maxLogoCount>5</maxLogoCount>
+		<zIndex>75</zIndex>
+	</carousel>
+	
+
+	  
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <zIndex>2</zIndex>                 
+         <path>./_inc/images/overlay.png</path>
+      </image>                    
+      <text name="systemInfo">     
+         <pos>0.160 0.905</pos>
+         <backgroundColor>00000000</backgroundColor>
+         <color>0b8bd2</color>
+         <fontPath>./_inc/fonts/NEON CLUB MUSIC_bold.otf</fontPath>
+	     <fontSize>0.032</fontSize>
+         <zIndex>5</zIndex>	     
+      </text>            
+   </view>
+</feature>
+
+
+<!--
+On Screen help
+-->
+
+   <view name="system">
+      <helpsystem name="help">
+         <fontPath>./_inc/fonts/gomarice_no_continue.ttf</fontPath>
+         <fontSize>0.03</fontSize>     
+         <pos>1.42 0.948</pos>      
+         <textColor>000000</textColor>
+         <iconColor>000000</iconColor>
+      </helpsystem>
+   </view>  
+
+   <view name="basic,detailed,video">
+      <helpsystem name="help">
+         <fontPath>./_inc/fonts/gomarice_no_continue.ttf</fontPath>
+         <fontSize>0.03</fontSize>     
+         <pos>1.2 0.948</pos>      
+         <textColor>ffffff</textColor>
+         <iconColor>ffffff</iconColor>
+      </helpsystem>
+   </view>     
+   
+<!--
+System Gamelist
+--> 
+
+   <view name="basic,detailed,video">
+      <textlist name="gamelist">
+         <zIndex>5</zIndex>	      
+         <selectorColor>1c1c1c00</selectorColor> 
+	     <selectedColor>FFFF00</selectedColor>     
+         <pos>0.01 0.11</pos>
+         <size>0.30 0.90</size>
+         <primaryColor>7FABFE</primaryColor>
+         <secondaryColor>7FABFE</secondaryColor>
+         <fontPath>./_inc/fonts/The Led Display St.ttf</fontPath>
+         <fontSize>0.032</fontSize>
+         <forceUppercase>1</forceUppercase>
+         <scrollSound></scrollSound>
+         <alignment>left</alignment>      
+      </textlist>
+	  </view> 
+  
+  
+<!--
+System View Backgrounds
+-->  
+    
+   
+   <view name="basic">
+      <image name="background2" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>        
+         <path>./_inc/images/overlay.png</path>
+         <zIndex>2</zIndex>          
+      </image>
+      <image name="background3" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>        
+         <path>./_inc/images/background.png</path>
+         <zIndex>2</zIndex>          
+      </image>      
+      <image name="logo">
+         <origin>0.0 0.0</origin>      
+         <pos>0.10 0.005</pos>
+         <maxSize>0.20 0.11</maxSize>
+         <zIndex>6</zIndex>          
+      </image>
+      <image name="background3" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>        
+         <zIndex>2</zIndex>          
+      </image>                                
+   </view> 
+    
+   <view name="detailed,video">
+      <image name="background2" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>        
+         <path>./_inc/images/overlay.png</path>
+         <zIndex>1</zIndex>          
+      </image> 
+         </view>   
+    
+<!--
+Metadata, description, rating etc
+-->      
+    
+
+   <view name="video,detailed">   
+      <text name="md_lbl_manual, md_manual, md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount, md_rating, md_developer, md_publisher, md_genre, md_playcount, md_lastplayed">
+         <pos>1 1</pos>
+      </text>
+      <text name="md_lbl_manual, md_manual, md_lbl_rating,md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount,md_lbl_players,md_developer, md_publisher, md_genre, md_playcount, md_lastplayed,md_description,md_players,md_releasedate">
+         <color>7FABFE</color>
+         <fontPath>./_inc/fonts/gomarice_no_continue.ttf</fontPath>
+         <fontSize>0.025</fontSize>
+      </text>
+	  
+	  	  <image name="md_manual">
+         <zIndex>75</zIndex>       
+         <pos>0.365 0.41</pos>
+         <size>0.05 0.085</size>
+         <path>./_inc/images/doc_filled.png</path>
+      </image>
+	        <image name="background" extra="true">
+         <zIndex>75</zIndex>       
+         <pos>0.34 0.37</pos>
+         <size>0.05 0.085</size>
+         <path>./_inc/images/doc_empty.png</path>              
+
+      </image> 
+
+	  
+      <text name="md_lbl_rating">
+         <pos>1.3 0.61</pos>
+         <size>0.2 0.035</size>
+         <color>7FABFE</color>
+         <zIndex>5</zIndex>                 
+      </text>
+	        <rating name="md_rating">
+         <zIndex>5</zIndex>       
+         <pos>0.72 0.61</pos>
+         <size>0.05 0.075</size>
+         <filledPath>./_inc/images/star_filled.png</filledPath>
+         <unfilledPath>./_inc/images/star_empty.png</unfilledPath>
+      </rating>
+      <text name="md_lbl_players">
+         <pos>0.38 0.59</pos>
+         <size>0.1 0.035</size>
+         <zIndex>43</zIndex>         
+      </text>
+      <text name="md_players">
+         <pos>0.45 0.59</pos>
+         <size>0.0375 0.035</size>
+         <zIndex>43</zIndex>
+         <color>ffffff</color>                  
+      </text>
+      <text name="md_lbl_releasedate">
+         <pos>0.38 0.63</pos>
+         <size>0.12 0.035</size>
+         <zIndex>43</zIndex>         
+      </text>
+      <datetime name="md_releasedate">
+         <pos>0.485 0.63</pos>
+         <size>0.0750 0.035</size>
+         <zIndex>43</zIndex>
+         <color>ffffff</color>                  
+      </datetime>
+      <text name="md_lbl_genre">
+         <pos>0.54 0.59</pos>
+         <size>0.12 0.035</size>
+         <zIndex>5</zIndex>                   
+      </text>
+      <text name="md_genre">
+         <pos>0.6 0.59</pos>
+         <size>0.2 0.035</size>
+         <color>ffffff</color>         
+         <zIndex>5</zIndex>         
+      </text>         
+      <text name="md_lbl_playcount">
+         <pos>0.570 0.63</pos>
+         <size>0.2 0.035</size>
+         <zIndex>5</zIndex>                   
+      </text>
+      <text name="md_playcount">
+         <pos>0.702 0.63</pos>
+         <size>0.0375 0.035</size>
+         <color>ffffff</color>         
+         <zIndex>5</zIndex>         
+      </text>
+      <text name="md_lbl_publisher">
+         <pos>1.3 0.56</pos>
+         <size>0.1 0.035</size>
+         <color>ffffff</color>
+         <zIndex>5</zIndex>                   
+      </text>
+      <text name="md_publisher">
+         <pos>1.39 0.56</pos>
+         <size>0.12 0.035</size>
+         <color>F3E804</color>         
+         <zIndex>5</zIndex>         
+      </text>
+      <text name="md_lbl_developer">
+         <pos>1.3 0.61</pos>
+         <size>0.1 0.035</size>
+         <color>ffffff</color>
+         <zIndex>5</zIndex>                   
+      </text>
+      <text name="md_developer">
+         <pos>1.39 0.61</pos>
+         <size>0.12 0.035</size>
+         <color>F3E804</color>         
+         <zIndex>5</zIndex>         
+      </text>
+      <text name="md_lbl_lastplayed">
+         <pos>1.3 0.66</pos>
+         <size>0.12 0.035</size>
+         <zIndex>43</zIndex>         
+      </text>
+      <datetime name="md_lastplayed">
+         <pos>1.39 0.66</pos>
+         <size>0.12 0.035</size>
+         <zIndex>43</zIndex>
+         <color>F3E804</color>                  
+      </datetime>                            
+      <text name="md_description">
+         <pos>0.38 0.69</pos>
+         <size>0.55 0.21</size>
+         <color>ffffff</color>
+         <alignment>left</alignment>   
+         <zIndex>5</zIndex>         
+      </text>
+   </view>
+
+  
+
+<!--
+Images, boxart, snaps, wheel art etc
+--> 
+
+
+   <view name="detailed">
+   
+  
+      <image name="logo">
+         <origin>0.0 0.0</origin>      
+         <pos>0.10 0.005</pos>
+         <maxSize>0.20 0.11</maxSize>
+         <zIndex>6</zIndex>         
+      </image>    
+      <image name="md_image">
+         <origin>0.5 0.5</origin>
+         <pos>0.65 0.37</pos>
+         <maxSize>0.40 0.33</maxSize>
+         <zIndex>6</zIndex>         
+      </image>           
+   </view>
+
+   <view name="video"> 
+      <image name="logo">
+         <origin>0.0 0.0</origin>      
+         <pos>0.10 0.005</pos>
+         <maxSize>0.20 0.11</maxSize>
+         <zIndex>6</zIndex>         
+      </image>   
+      <video name="md_video">
+         <origin>0.5 0.5</origin>
+         <pos>0.565 0.405</pos>
+         <maxSize>0.350 0.37</maxSize>
+		 		<default>./_inc/comingsoon.mp4</default>	
+         <showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+		 		<delay>0</delay>
+         <zIndex>6</zIndex>               
+      </video> 
+      <image name="md_image">
+         <pos>0.835 0.450</pos>
+         <maxSize>0.2 0.3</maxSize>
+         <zIndex>6</zIndex>        
+      </image>         
+      <image name="md_marquee">
+         <pos>0.835 0.250</pos>
+         <origin>0.5 0.5</origin>
+         <maxSize>0.08 0.08</maxSize>
+         <zIndex>7</zIndex>         
+      </image>             
+   </view>
+   <view name="grid">
+	<text name="md_genre">
+			<size>0.83 0.19</size>
+			<color>ffffff</color> <origin>0.5 0.5</origin>
+			<pos>0.47 0.820</pos>
+			<fontSize>0.04</fontSize>
+			<fontPath>./_inc/fonts/gomarice_no_continue.ttf</fontPath>
+			<zIndex>91</zIndex>  
+		</text>
+		
+	<text name="md_description">
+	  	<color>ffffff</color>
+		<fontSize>0.024</fontSize>
+		<fontPath>./_inc/fonts/gomarice_no_continue.ttf</fontPath>
+		<size>0.20 0.10</size>
+		<pos>0.08 0.860</pos>
+    </text>
+
+	<text name="md_name">
+			<fontPath>./_inc/fonts/NEON CLUB MUSIC_bold.otf</fontPath>
+			<fontSize>0.04</fontSize>
+			<pos>0.05 0.05</pos>
+			<size>0.6875 0.0248148148148148</size>
+			<alignment>left</alignment>
+			<color>ffa200</color>
+		</text>
+	
+	<image name="md_marquee">
+			<origin>1 0.5</origin>
+			<pos>0.95 0.080</pos>
+			<maxSize>0.2 0.08</maxSize>
+		</image>
+	
+	 <helpsystem name="help">
+         <fontPath>./_inc/fonts/gomarice_no_continue.ttf</fontPath>
+         <fontSize>0.0215</fontSize>      
+         <pos>0.30 0.942</pos>      
+         <textColor>ffffff</textColor>
+         <iconColor>ffffff</iconColor>
+      </helpsystem>
+	
+		<gridtile name="default">
+			<size>0.22875 0.33</size>
+			<backgroundColor>00000000</backgroundColor>
+		</gridtile>
+	
+	 <image name="background" extra="true">
+         <origin>0 0</origin>
+         <path>./_inc/grid.jpg</path>
+         <pos>0 0</pos>
+         <size>1 1</size>
+		 <zIndex>8</zIndex>    
+      </image>
+	
+	  
+    <imagegrid name="gamegrid">
+		<color>000000</color>
+		<pos>0 0.105</pos>
+		<size>1 0.67</size>
+		<autoLayout>3 2</autoLayout>
+		<margin>0.1 0</margin>
+		<padding>0.1 0.0025 0.1 0.001</padding>
+		<autoLayoutSelectedZoom>1</autoLayoutSelectedZoom>
+		<animateSelection>false</animateSelection>
+        <zIndex>300</zIndex>
+    </imagegrid>
+
+    <gridtile name="default">
+      <backgroundColor>FFFFFF00</backgroundColor>
+      <backgroundCornerSize>9 9</backgroundCornerSize>
+      <selectionMode>video</selectionMode>
+      <padding>5 5</padding>
+      <imageColor>ffffff</imageColor>
+      <reflexion>0.25 0.0</reflexion>	  
+    </gridtile>
+	
+    <gridtile name="selected">
+      <backgroundCenterColor>00000000</backgroundCenterColor>
+      <backgroundEdgeColor>ffffff</backgroundEdgeColor>	
+      <imageColor>FFFFFFFF</imageColor>
+    </gridtile>
+
+    <ninepatch name="gridtile.background:selected">
+      <animateColor>00000000</animateColor>
+      <animateColorTime>350</animateColorTime>
+    </ninepatch>
+</view>
+
+<!--	Random Videos	-->
+
+	<subset name="Random Videos" displayName="${lang-randomVideos}">
+	<include name="Batocera Club" displayName="${lang-BatoceraClubVideos}">./_inc/BatoceraClubVideos.xml</include>
+	<include name="Snaps Videos" displayName="${lang-snapsVideos}">./_inc/snapsvideos.xml</include>
+	</subset>
+<!------------------------>		
+
+
+   
+</theme>
