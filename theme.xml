@@ -13,8 +13,29 @@ Foked by Lorenzolamas of the original theme => see infos below.
 <?xml version="1.0" encoding="UTF-8"?>
 <theme>
    <formatVersion>7</formatVersion>
-   
 
+<include>./_inc/lang.xml</include>
+<include>./_inc/lang-${lang}.xml</include>
+<include>./_inc/staticEffects/effects.xml</include>
+
+<subset name="screen ratio" displayName="${lang.screenratio}">
+
+		<include name="169" displayName="${lang.169}"/>
+		<include name="43" displayName="${lang.43}"/>
+
+</subset>
+
+
+<subset name="staticEffect" displayName="${lang.staticEffect}">
+<include name="no" displayName="${lang.no}"/>
+<include name="scanlines" displayName="${lang.scanlines}"/>
+<include name="scanlinesFine" displayName="${lang.scanlinesFine}"/>
+<include name="scanlinesVertical" displayName="${lang.scanlinesVertical}"/>
+<include name="scanlinesVerticalFine" displayName="${lang.scanlinesVerticalFine}"/>
+<include name="crt" displayName="${lang.crt}"/>
+<include name="phosphore" displayName="${lang.phosphore}"/>
+<include name="phosphorePlus" displayName="${lang.phosphorePlus}"/>
+</subset>
 	
 <!------------------------------>
 	
@@ -542,9 +563,9 @@ Images, boxart, snaps, wheel art etc
 
 <!--	Random Videos	-->
 
-	<subset name="Random Videos" displayName="${lang-randomVideos}">
-	<include name="Batocera Club" displayName="${lang-BatoceraClubVideos}">./_inc/BatoceraClubVideos.xml</include>
-	<include name="Snaps Videos" displayName="${lang-snapsVideos}">./_inc/snapsvideos.xml</include>
+	<subset name="Random Videos" displayName="${lang.randomVideos}">
+	<include name="Batocera Club" displayName="${lang.BatoceraClubVideos}">./_inc/BatoceraClubVideos.xml</include>
+	<include name="Snaps Videos" displayName="${lang.snapsVideos}">./_inc/snapsvideos.xml</include>
 	</subset>
 <!------------------------>		
 

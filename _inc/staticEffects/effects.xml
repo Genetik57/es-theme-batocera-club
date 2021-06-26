@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<theme>
+<formatVersion>7</formatVersion>
+
+<view name="screen">
+
+<image name="scanlines" extra="true">
+<size>1 1</size>
+<pos>0.5 0.5</pos>
+<origin>0.5 0.5</origin>
+<zIndex>6000</zIndex>
+<tile>true</tile>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:scanlines">
+<path>./../scanlines.png</path>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesFine">
+<path>./../scanlinesFine.png</path>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesVertical">
+<path>./../scanlinesVertical.png</path>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:scanlinesVerticalFine">
+<path>./../scanlinesVerticalFine.png</path>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:crt">
+<path>./../crt.png</path>
+<color>ffffff90</color>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:phosphore">
+<path>./../phosphore.png</path>
+</image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:phosphorePlus">
+<path>./../phosphorePlus.png</path>
+</image>
+	
+</view>
+
+</theme>
