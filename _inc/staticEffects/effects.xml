@@ -41,6 +41,10 @@
 <image name="scanlines" extra="true" ifSubset="staticEffect:phosphorePlus">
 <path>./../phosphorePlus.png</path>
 </image>
+
+<image name="scanlines" extra="true" ifSubset="staticEffect:no">
+<visible>false</visible>
+</image>
 	
 </view>
 
