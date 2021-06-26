@@ -8,8 +8,9 @@
     <video name="backgroundvideo" extra="true">
       <path>{random}</path>                 
 		<origin>0.5 0.5</origin>
-		<size>0.6171875 0.712962962962963</size>
-		<pos>0.64140625 0.5564814814814815</pos>
+		<maxSize>0.700 0.980</maxSize>
+		<pos>0.645 0.557</pos>
+      <minSize>0.700 0.980</minSize>
       <delay>0</delay>
 		<default>./_inc/comingsoon.mp4</default>	
          <showSnapshotNoVideo>false</showSnapshotNoVideo>
