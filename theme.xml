@@ -18,11 +18,9 @@ Foked by Lorenzolamas of the original theme => see infos below.
 <include>./_inc/lang-${lang}.xml</include>
 <include>./_inc/staticEffects/effects.xml</include>
 
-<subset name="screen ratio" displayName="${lang.screenratio}">
-
-		<include name="169" displayName="${lang.169}"/>
-		<include name="43" displayName="${lang.43}"/>
-
+<subset name="screenRatio" displayName="${lang.screenratio}">
+<include name="169" displayName="${lang.169}"/>
+<include name="43" displayName="${lang.43}"/>
 </subset>
 
 
@@ -76,8 +74,10 @@ Clock position
 		<fontSize>0.03</fontSize>
 		<color>ffffff</color>
 		<fontPath>./_inc/fonts/gomarice_no_continue.ttf</fontPath>
-		<pos>0.935 0.030</pos>
+		<pos>0.935 0.04</pos>
+		<pos ifSubset="screenRatio:43">0.92 0.04</pos>
 		<size>0.05 0.058</size>
+		<size ifSubset="screenRatio:43">0.065 0.058</size>
 		<verticalAlignment>right</verticalAlignment>
 		</text>
 </view>
@@ -182,6 +182,20 @@ System View Backgrounds
     
    
    <view name="basic">
+    <video name="backgroundvideo" extra="true">
+		<path>./${system.theme}/_inc/system.mp4</path>
+		<origin>0.5 0.5</origin>
+		<size>0.6171875 0.712962962962963</size>
+		<size ifSubset="screenRatio:43">0.8 0.712962962962963</size>
+		<pos>0.64140625 0.5564814814814815</pos>
+		<pos ifSubset="screenRatio:43">0.65 0.5564814814814815</pos>
+		<delay>0</delay>
+		<effect>none</effect>
+		<default>./_inc/comingsoon.mp4</default>		
+		<showSnapshotNoVideo>false</showSnapshotNoVideo>
+		<showSnapshotDelay>false</showSnapshotDelay>
+		<zIndex>2</zIndex>      
+    </video>
       <image name="background2" extra="true">
 					<linearSmooth>true</linearSmooth>
          <origin>0 0</origin>
@@ -238,6 +252,7 @@ Metadata, description, rating etc
          <color>7FABFE</color>
          <fontPath>./_inc/fonts/gomarice_no_continue.ttf</fontPath>
          <fontSize>0.025</fontSize>
+         <fontSize ifSubset="screenRatio:43">0.02</fontSize>
       </text>
 	  
 	  	  <image name="md_manual">
@@ -247,7 +262,12 @@ Metadata, description, rating etc
          <size>0.05 0.085</size>
          <path>./_inc/images/doc_filled.png</path>
       </image>
-	        <image name="background" extra="true">
+
+	  	  <image name="md_manual" ifSubset="screenRatio:43">
+         <pos>0.3625 0.41</pos>
+         <size>0.05 0.06</size>
+      </image>
+	  <image name="background" extra="true">
 					<linearSmooth>true</linearSmooth>
          <zIndex>75</zIndex>       
          <pos>0.34 0.37</pos>
@@ -256,6 +276,11 @@ Metadata, description, rating etc
 
       </image> 
 
+	  <image name="background" extra="true" ifSubset="screenRatio:43">
+         <pos>0.3375 0.38</pos>
+         <size>0.05 0.06</size>
+
+      </image> 
 	  
       <text name="md_lbl_rating">
          <pos>1.3 0.61</pos>
@@ -269,6 +294,10 @@ Metadata, description, rating etc
          <size>0.05 0.075</size>
          <filledPath>./_inc/images/star_filled.png</filledPath>
          <unfilledPath>./_inc/images/star_empty.png</unfilledPath>
+      </rating>
+	        <rating name="md_rating" ifSubset="screenRatio:43">
+         <pos>0.75 0.635</pos>
+         <size>0.05 0.05</size>
       </rating>
       <text name="md_lbl_players">
          <pos>0.38 0.59</pos>
@@ -396,13 +425,14 @@ Images, boxart, snaps, wheel art etc
          <origin>0.5 0.5</origin>
          <pos>0.565 0.405</pos>
          <maxSize>0.350 0.37</maxSize>
+         <maxSize ifSubset="screenRatio:43">0.33 0.37</maxSize>
 		 		<default>./_inc/comingsoon.mp4</default>	
          <showSnapshotNoVideo>false</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
 		 		<delay>0</delay>
          <zIndex>6</zIndex>               
       </video> 
-      <image name="md_image">
+      <image name="md_thumbnail">
 					<linearSmooth>true</linearSmooth>
          <pos>0.835 0.450</pos>
          <maxSize>0.2 0.3</maxSize>
@@ -449,13 +479,14 @@ Images, boxart, snaps, wheel art etc
          <origin>0.5 0.5</origin>
          <pos>0.565 0.405</pos>
          <maxSize>0.350 0.37</maxSize>
+         <maxSize ifSubset="screenRatio:43">0.33 0.37</maxSize>
 		 		<default>./_inc/comingsoon.mp4</default>	
          <showSnapshotNoVideo>false</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
 		 		<delay>0</delay>
          <zIndex>6</zIndex>               
       </video> 
-      <image name="md_image">
+      <image name="md_thumbnail">
 					<linearSmooth>true</linearSmooth>
          <pos>0.835 0.450</pos>
          <maxSize>0.2 0.3</maxSize>
@@ -501,7 +532,8 @@ Images, boxart, snaps, wheel art etc
 	<image name="md_marquee">
 					<linearSmooth>true</linearSmooth>
 			<origin>1 0.5</origin>
-			<pos>0.95 0.080</pos>
+			<pos>0.94 0.050</pos>
+			<pos ifSubset="screenRatio:43">0.89 0.050</pos>
 			<maxSize>0.2 0.08</maxSize>
 		</image>
 	
@@ -563,7 +595,7 @@ Images, boxart, snaps, wheel art etc
 
 <!--	Random Videos	-->
 
-	<subset name="Random Videos" displayName="${lang.randomVideos}">
+	<subset name="Random Videos" displayName="${lang.randomVideos}" appliesTo="basic,detaile,video,grid,gamecarousel">
 	<include name="Batocera Club" displayName="${lang.BatoceraClubVideos}">./_inc/BatoceraClubVideos.xml</include>
 	<include name="Snaps Videos" displayName="${lang.snapsVideos}">./_inc/snapsvideos.xml</include>
 	</subset>
