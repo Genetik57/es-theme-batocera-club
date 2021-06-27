@@ -79,6 +79,32 @@ Clock position
 -->
 
 <view name="screen">
+<controllerActivity name="controllerActivity">
+<pos>0.002 0</pos>
+<size>0.065 0.018</size>
+<itemSpacing>0.003</itemSpacing>
+<imagePath>./_inc/gamepad.svg</imagePath>
+<color>fffffffc</color>
+<activityColor>125012</activityColor>
+<hotkeyColor>501212</hotkeyColor>
+</controllerActivity>
+
+
+<batteryIndicator name="batteryIndicator">
+<pos>0.98 0</pos>
+<size>0.018 0.018</size>
+<incharge>./_inc/battery/incharge.svg</incharge>
+<full>./_inc/battery/full.svg</full>
+<at75>./_inc/battery/75.svg</at75>
+<at50>./_inc/battery/50.svg</at50>
+<at25>./_inc/battery/25.svg</at25>
+<empty>./_inc/battery/empty.svg</empty>
+<color>fffffffc</color>
+</batteryIndicator>
+
+<batteryIndicator name="batteryIndicator">
+<color>fffffffc</color>
+</batteryIndicator>
 <text name="clock">
 
 		<fontSize>0.03</fontSize>
