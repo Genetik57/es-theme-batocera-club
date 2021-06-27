@@ -250,10 +250,12 @@ System View Backgrounds
       </image>      
       <image name="logo">
 					<linearSmooth>true</linearSmooth>
+					<reflexion>0.05 0</reflexion>
          <origin>0.0 0.0</origin>      
          <pos>0.10 0.005</pos>
          <maxSize>0.20 0.11</maxSize>
-         <zIndex>6</zIndex>          
+         <zIndex>6</zIndex>
+<visible ifSubset="screenRatio:43">false</visible>		 
       </image>
       <image name="background3" extra="true">
 					<linearSmooth>true</linearSmooth>
@@ -435,10 +437,12 @@ Images, boxart, snaps, wheel art etc
   
       <image name="logo">
 					<linearSmooth>true</linearSmooth>
+<reflexion>0.05 0</reflexion>
          <origin>0.0 0.0</origin>      
          <pos>0.10 0.005</pos>
          <maxSize>0.20 0.11</maxSize>
          <zIndex>6</zIndex>         
+<visible ifSubset="screenRatio:43">false</visible>		 
       </image>    
       <image name="md_image">
 					<linearSmooth>true</linearSmooth>
@@ -452,10 +456,12 @@ Images, boxart, snaps, wheel art etc
    <view name="video"> 
       <image name="logo">
 					<linearSmooth>true</linearSmooth>
+					<reflexion>0.05 0</reflexion>
          <origin>0.0 0.0</origin>      
          <pos>0.10 0.005</pos>
          <maxSize>0.20 0.11</maxSize>
          <zIndex>6</zIndex>         
+<visible ifSubset="screenRatio:43">false</visible>		 
       </image>   
       <video name="md_video">
          <origin>0.5 0.5</origin>
@@ -506,10 +512,12 @@ Images, boxart, snaps, wheel art etc
       <image name="logo1" extra="true">
 					<linearSmooth>true</linearSmooth>
 	  			<path>./${system.theme}/_inc/system.png</path>
+					<reflexion>0.05 0</reflexion>
          <origin>0.0 0.0</origin>      
          <pos>0.2 0.005</pos>
          <maxSize>0.20 0.11</maxSize>
          <zIndex>6</zIndex>         
+<visible ifSubset="screenRatio:43">false</visible>		 
       </image>
 	  
       <video name="md_video">
@@ -654,6 +662,70 @@ Images, boxart, snaps, wheel art etc
 </control>
 
 </view>
+
+<view name="system,basic,detailed,video,gamecarousel">
+<image name="invader,snakervill,batocera,lightbatocera,club,lightclub" extra="true" ifSubset="screenRatio:169">
+<linearSmooth>true</linearSmooth>
+<size>1 1</size>
+<pos>0 0</pos>
+</image>
+<image name="invader,snakervill,batocera,lightbatocera,club,lightclub" extra="true" ifSubset="screenRatio:43">
+<linearSmooth>true</linearSmooth>
+<size>1.3 1</size>
+<pos>1 0</pos>
+<origin>1 0</origin>
+</image>
+<image name="invader" extra="true">
+<path>./_inc/images/invader.png</path>
+<zIndex>100</zIndex>
+<color>ffffff</color>
+<colorEnd>ffffff</colorEnd>
+<storyboard>
+<animation property="opacity" from="1" to="1" duration="350" mode="Linear"/>
+<animation property="opacity" to="0" duration="1000" begin="350" autoreverse="true" repeat="forever" mode="easeIn"/>
+</storyboard>
+</image>
+<image name="snakervill" extra="true">
+<path>./_inc/images/snakervill.png</path>
+<zIndex>150</zIndex>
+<storyboard>
+<animation property="offsetX" from="1" to="1" duration="250" mode="easeOut"/>
+<animation property="offsetX" from="1" to="0" duration="250" begin="500" mode="easeOut"/>
+<animation property="offsetY" to="0.01" duration="250" autoreverse="true" repeat="forever" mode="easeIn"/>
+</storyboard>
+</image>
+<image name="batocera" extra="true">
+<path>./_inc/images/batocera.png</path>
+<zIndex>140</zIndex>
+</image>
+<image name="lightbatocera" extra="true">
+<path>./_inc/images/lightbatocera.png</path>
+<zIndex>120</zIndex>
+<color>ffffff</color>
+<colorEnd>ffffff</colorEnd>
+<storyboard>
+<animation property="opacity" to="0.9" duration="60" autoreverse="true" repeat="forever" mode="easeIn"/>
+<animation property="color" to="ffffffe6" duration="30" autoreverse="true" repeat="forever" mode="easeIn"/>
+<animation property="colorEnd" to="ff0000e6" duration="15" autoreverse="true" repeat="forever" mode="easeIn"/>
+</storyboard>
+</image>
+<image name="club" extra="true">
+<path>./_inc/images/club.png</path>
+<zIndex>130</zIndex>
+</image>
+<image name="lightclub" extra="true">
+<path>./_inc/images/lightclub.png</path>
+<zIndex>110</zIndex>
+<color>ffffff</color>
+<colorEnd>ffffff</colorEnd>
+<storyboard>
+<animation property="opacity" to="0.9" duration="60" autoreverse="true" repeat="forever" mode="easeIn"/>
+<animation property="color" to="ffffffe6" duration="30" autoreverse="true" repeat="forever" mode="easeIn"/>
+<animation property="colorEnd" to="ff0000e6" duration="15" autoreverse="true" repeat="forever" mode="easeIn"/>
+</storyboard>
+</image>
+</view>
+
 <!--	Random Videos	-->
 
 	<subset name="Random Videos" displayName="${lang.randomVideos}" appliesTo="basic,detaile,video,grid,gamecarousel">
