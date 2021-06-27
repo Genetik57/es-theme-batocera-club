@@ -24,6 +24,12 @@ Foked by Lorenzolamas of the original theme => see infos below.
 </subset>
 
 
+<subset name="transition" displayName="${lang.transition}">
+<include name="yes" displayName="${lang.yes}"/>
+<include name="no" displayName="${lang.no}"/>
+</subset>
+
+
 <subset name="staticEffect" displayName="${lang.staticEffect}">
 <include name="no" displayName="${lang.no}"/>
 <include name="scanlines" displayName="${lang.scanlines}"/>
@@ -110,8 +116,8 @@ Carousel wheel and main menu background
 		<logoAlignment>left</logoAlignment>
 		<maxLogoCount>5</maxLogoCount>
 		<zIndex>75</zIndex>
+		<defaultTransition ifSubset="transition:no">instant</defaultTransition>
 	</carousel>
-	
 
 	  
       <image name="background" extra="true">
