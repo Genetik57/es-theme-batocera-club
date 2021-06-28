@@ -438,6 +438,10 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <path>./{system.theme}/music.ogg</path>
 </sound>
 
+<sound name="bgsound" ifSubset="RandomVideos:snapsVideos">
+<path>./_inc/silence.ogg</path>
+</sound>
+
 <carousel name="systemcarousel">
 <type>vertical_wheel</type>
 <pos>0 0</pos>
