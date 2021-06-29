@@ -115,7 +115,7 @@ Foked by Lorenzolamas of the original theme => see infos below.
 <menuBackground name="menubg">
 <color>242424</color>
 <cornerSize>32 32</cornerSize>
-<path>./_inc/grid.jpg</path>
+<path>./_inc/images/grid.jpg</path>
 </menuBackground>
 
 <menuIcons name="menuicons">
@@ -221,19 +221,6 @@ Foked by Lorenzolamas of the original theme => see infos below.
 
 <image name="scanlines" extra="true" ifSubset="staticEffect:no">
 <visible>false</visible>
-</image>
-
-</view>
-
-<view name="system,basic,detailed,video,grid,gamecarousel">
-
-<image name="scanlines" extra="true">
-<origin>0.5 0.5</origin>
-<size>0.6171875 0.712962962962963</size>
-<pos>0.64140625 0.5564814814814815</pos>
-<zIndex>4</zIndex>
-<tile>true</tile>
-<visible ifSubset="staticEffectApply:screenApply">false</visible>
 </image>
 
 </view>
@@ -345,20 +332,6 @@ Foked by Lorenzolamas of the original theme => see infos below.
 </helpsystem>
 
 </view>  
-
-<view name="system,basic">
-
-<image name="system-background" extra="true">
-<linearSmooth>true</linearSmooth>
-<origin>0 0</origin>
-<pos>0 0</pos>
-<size>1 1</size>
-<tile>false</tile>
-<path>./${system.theme}/_inc/background.png</path>
-<zIndex>1</zIndex>          
-</image>  
-  
-</view>
 	
 <view name="system">
 
@@ -465,8 +438,8 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <origin>0 0</origin>
 <pos>0 0</pos>
 <size>1 1</size>        
-<path>./_inc/background.png</path>
-<zIndex>1</zIndex>          
+<path>./_inc/images/background.png</path>
+<zIndex>2</zIndex>          
 </image> 
 
 <video name="backgroundvideo" extra="true">
@@ -480,20 +453,11 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <delay>0.1</delay>
 <effect>none</effect>
 <default>./_inc/comingsoon.mp4</default>		
-<zIndex>1</zIndex> 
+<zIndex>2</zIndex> 
 <audio>false</audio>
 <audio ifSubset="RandomVideos:SnapsVideos">true</audio>
 </video>
 		
-<image name="background" extra="true">
-<linearSmooth>true</linearSmooth>
-<origin>0 0</origin>
-<pos>0 0</pos>
-<size>1 1</size>
-<zIndex>5</zIndex>                 
-<path>./_inc/images/overlay.png</path>
-</image>                    
-
 <text name="systemInfo">     
 <pos>0.160 0.904</pos>
 <backgroundColor>00000000</backgroundColor>
@@ -544,17 +508,8 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <default>./_inc/comingsoon.mp4</default>		
 <showSnapshotNoVideo>false</showSnapshotNoVideo>
 <showSnapshotDelay>false</showSnapshotDelay>
-<zIndex>2</zIndex>      
+<zIndex>3</zIndex>      
 </video>
-
-<image name="background2" extra="true">
-<linearSmooth>true</linearSmooth>
-<origin>0 0</origin>
-<pos>0 0</pos>
-<size>1 1</size>        
-<path>./_inc/images/overlay.png</path>
-<zIndex>5</zIndex>          
-</image>
 
 <image name="background3" extra="true">
 <linearSmooth>true</linearSmooth>
@@ -586,15 +541,6 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 </view> 
     
 <view name="detailed,video,gamecarousel">
-
-<image name="background2" extra="true">
-<linearSmooth>true</linearSmooth>
-<origin>0 0</origin>
-<pos>0 0</pos>
-<size>1 1</size>        
-<path>./_inc/images/overlay.png</path>
-<zIndex>5</zIndex>          
-</image> 
 
 <control name="background,md_image,md_manual,md_nomanual,md_lbl_players,md_players,md_video,md_lbl_releasedate,md_releasedate,md_lbl_genre,md_genre,md_lbl_playcount,md_playcount,md_rating,md_genre,,md_marquee,md_thumbnail,md_description" ifSubset="control:yes">
 <storyboard event="open">
@@ -633,7 +579,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 	  
 <image name="md_manual">
 <linearSmooth>true</linearSmooth>
-<zIndex>0</zIndex>       
+<zIndex>2</zIndex>       
 <pos>0.365 0.41</pos>
 <size>0.05 0.085</size>
 <path>./_inc/images/doc_filled.png</path>
@@ -646,7 +592,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 
 <image name="md_nomanual">
 <linearSmooth>true</linearSmooth>
-<zIndex>0</zIndex>       
+<zIndex>2</zIndex>       
 <pos>0.365 0.41</pos>
 <size>0.05 0.085</size>
 <path>./_inc/images/doc_empty.png</path>
@@ -661,11 +607,11 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <pos>1.3 0.61</pos>
 <size>0.2 0.035</size>
 <color>7FABFE</color>
-<zIndex>0</zIndex>                 
+<zIndex>2</zIndex>                 
 </text>
 
 <rating name="md_rating">
-<zIndex>0</zIndex>       
+<zIndex>2</zIndex>       
 <pos>0.72 0.61</pos>
 <size>0.05 0.075</size>
 <filledPath>./_inc/images/star_filled.png</filledPath>
@@ -680,93 +626,93 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <text name="md_lbl_players">
 <pos>0.38 0.59</pos>
 <size>0.1 0.035</size>
-<zIndex>0</zIndex>         
+<zIndex>2</zIndex>         
 </text>
 
 <text name="md_players">
 <pos>0.45 0.59</pos>
 <size>0.0375 0.035</size>
-<zIndex>0</zIndex>
+<zIndex>2</zIndex>
 <color>ffffff</color>                  
 </text>
 
 <text name="md_lbl_releasedate">
 <pos>0.38 0.63</pos>
 <size>0.12 0.035</size>
-<zIndex>0</zIndex>         
+<zIndex>2</zIndex>         
 </text>
 
 <datetime name="md_releasedate">
 <pos>0.485 0.63</pos>
 <size>0.0750 0.035</size>
-<zIndex>0</zIndex>
+<zIndex>2</zIndex>
 <color>ffffff</color>                  
 
 </datetime>
 <text name="md_lbl_genre">
 <pos>0.54 0.59</pos>
 <size>0.12 0.035</size>
-<zIndex>0</zIndex>                   
+<zIndex>2</zIndex>                   
 </text>
 
 <text name="md_genre">
 <pos>0.6 0.59</pos>
 <size>0.2 0.035</size>
 <color>ffffff</color>         
-<zIndex>0</zIndex>         
+<zIndex>2</zIndex>         
 </text>         
 
 <text name="md_lbl_playcount">
 <pos>0.570 0.63</pos>
 <size>0.2 0.035</size>
-<zIndex>0</zIndex>                   
+<zIndex>2</zIndex>                   
 </text>
 
 <text name="md_playcount">
 <pos>0.702 0.63</pos>
 <size>0.0375 0.035</size>
 <color>ffffff</color>         
-<zIndex>0</zIndex>         
+<zIndex>2</zIndex>         
 </text>
 
 <text name="md_lbl_publisher">
 <pos>1.3 0.56</pos>
 <size>0.1 0.035</size>
 <color>ffffff</color>
-<zIndex>0</zIndex>                   
+<zIndex>2</zIndex>                   
 </text>
 
 <text name="md_publisher">
 <pos>1.39 0.56</pos>
 <size>0.12 0.035</size>
 <color>F3E804</color>         
-<zIndex>0</zIndex>         
+<zIndex>2</zIndex>         
 </text>
 
 <text name="md_lbl_developer">
 <pos>1.3 0.61</pos>
 <size>0.1 0.035</size>
 <color>ffffff</color>
-<zIndex>0</zIndex>                   
+<zIndex>2</zIndex>                   
 </text>
 
 <text name="md_developer">
 <pos>1.39 0.61</pos>
 <size>0.12 0.035</size>
 <color>F3E804</color>         
-<zIndex>0</zIndex>         
+<zIndex>2</zIndex>         
 </text>
 
 <text name="md_lbl_lastplayed">
 <pos>1.3 0.66</pos>
 <size>0.12 0.035</size>
-<zIndex>0</zIndex>         
+<zIndex>2</zIndex>         
 </text>
 
 <datetime name="md_lastplayed">
 <pos>1.39 0.66</pos>
 <size>0.12 0.035</size>
-<zIndex>0</zIndex>
+<zIndex>2</zIndex>
 <color>F3E804</color>                  
 </datetime>                            
 
@@ -775,7 +721,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <size>0.55 0.21</size>
 <color>ffffff</color>
 <alignment>left</alignment>   
-<zIndex>0</zIndex>         
+<zIndex>2</zIndex>         
 </text>
 
 </view>
@@ -798,7 +744,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <origin>0.5 0.5</origin>
 <pos>0.65 0.37</pos>
 <maxSize>0.40 0.33</maxSize>
-<zIndex>0</zIndex>         
+<zIndex>2</zIndex>         
 </image>           
 
 </view>
@@ -825,14 +771,14 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <showSnapshotDelay>true</showSnapshotDelay>
 <delay>1</delay>
 <effect>none</effect>
-<zIndex>0</zIndex>               
+<zIndex>2</zIndex>               
 </video> 
 
 <image name="md_thumbnail">
 <linearSmooth>true</linearSmooth>
 <pos>0.835 0.450</pos>
 <maxSize>0.2 0.3</maxSize>
-<zIndex>0</zIndex>        
+<zIndex>2</zIndex>        
 </image>         
 
 <image name="md_marquee">
@@ -840,7 +786,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <pos>0.835 0.250</pos>
 <origin>0.5 0.5</origin>
 <maxSize>0.08 0.08</maxSize>
-<zIndex>0</zIndex>         
+<zIndex>2</zIndex>         
 </image>             
 </view>
    
@@ -884,14 +830,14 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <showSnapshotDelay>true</showSnapshotDelay>
 <delay>1</delay>
 <effect>none</effect>
-<zIndex>0</zIndex>               
+<zIndex>2</zIndex>               
 </video> 
 
 <image name="md_thumbnail">
 <linearSmooth>true</linearSmooth>
 <pos>0.835 0.450</pos>
 <maxSize>0.2 0.3</maxSize>
-<zIndex>0</zIndex>        
+<zIndex>2</zIndex>        
 </image>         
 
 <image name="md_marquee">
@@ -899,7 +845,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <pos>0.835 0.250</pos>
 <origin>0.5 0.5</origin>
 <maxSize>0.08 0.08</maxSize>
-<zIndex>0</zIndex>         
+<zIndex>2</zIndex>         
 </image>             
 
 </view>
@@ -949,7 +895,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <image name="background" extra="true">
 <linearSmooth>true</linearSmooth>
 <origin>0 0</origin>
-<path>./_inc/grid.jpg</path>
+<path>./_inc/images/grid.jpg</path>
 <pos>0 0</pos>
 <size>1 1</size>
 <zIndex>8</zIndex>    
@@ -993,6 +939,64 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 
 <view name="system,basic,detailed,video,gamecarousel">
 
+<image name="scanlines" extra="true">
+<origin>0.5 0.5</origin>
+<size>0.6171875 0.712962962962963</size>
+<pos>0.64140625 0.5564814814814815</pos>
+<zIndex>6</zIndex>
+<tile>true</tile>
+<visible ifSubset="staticEffectApply:screenApply">false</visible>
+</image>
+
+<image name="wallpaper" extra="true">
+<linearSmooth>true</linearSmooth>
+<origin>0 0</origin>
+<pos>0 0</pos>
+<size>1 1</size>
+<zIndex>3</zIndex>                 
+<path>./_inc/images/wallpaper.png</path>
+<color>ffffff</color>
+<colorEnd>ffffff</colorEnd>
+<gradientType>vertical</gradientType>
+<storyboard>
+<animation property="color" to="00ffff" duration="2500" begin="350" autoreverse="true" repeat="forever" mode="easeIn"/>
+<animation property="colorEnd" to="ffff50" duration="5000" begin="350" autoreverse="true" repeat="forever" mode="easeIn"/>
+</storyboard>
+</image>                    
+
+<image name="backOverlay" extra="true">
+<linearSmooth>true</linearSmooth>
+<origin>0 0</origin>
+<pos>0 0</pos>
+<size>1 1</size>
+<zIndex>1</zIndex>                 
+<path>./_inc/images/backOverlay.png</path>
+</image>                    
+
+<image name="overlay" extra="true">
+<linearSmooth>true</linearSmooth>
+<origin>0 0</origin>
+<pos>0 0</pos>
+<size>1 1</size>
+<zIndex>7</zIndex>                 
+<path>./_inc/images/overlay.png</path>
+</image>                    
+
+<image name="white" extra="true">
+<linearSmooth>true</linearSmooth>
+<origin>0 0</origin>
+<pos>0 0</pos>
+<size>1 1</size>
+<zIndex>8</zIndex>                 
+<path>./_inc/images/white.png</path>
+<color>ffffff</color>
+<colorEnd>ffffff</colorEnd>
+<gradientType>vertical</gradientType>
+<storyboard>
+<animation property="opacity" to="0.8" duration="15" autoreverse="true" repeat="forever" mode="bump"/>
+</storyboard>
+</image>                    
+
 <image name="invader,snakervill,batocera,lightbatocera,club,lightclub" extra="true" ifSubset="screenRatio:169">
 <linearSmooth>true</linearSmooth>
 <size>1 1</size>
@@ -1010,7 +1014,6 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <path>./_inc/images/invader.png</path>
 <zIndex>100</zIndex>
 <color>ffffff</color>
-<colorEnd>ffffff</colorEnd>
 <storyboard>
 <animation property="opacity" from="1" to="1" duration="350" mode="Linear"/>
 <animation property="opacity" to="0" duration="1000" begin="350" autoreverse="true" repeat="forever" mode="easeIn"/>
