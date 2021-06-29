@@ -524,10 +524,10 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <linearSmooth>true</linearSmooth>
 <reflexion>0.05 0</reflexion>
 <origin>0.0 0.0</origin>      
-<pos>0.10 0.005</pos>
+<pos>0.01 0.005</pos>
 <pos ifSubset="screenRatio:43">0.3 0.88</pos>
 <maxSize>0.20 0.11</maxSize>
-<zIndex>6</zIndex>
+<zIndex>10</zIndex>
 </image>
 
 <image name="background3" extra="true">
@@ -733,10 +733,10 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <linearSmooth>true</linearSmooth>
 <reflexion>0.05 0</reflexion>
 <origin>0.0 0.0</origin>      
-<pos>0.10 0.005</pos>
+<pos>0.01 0.005</pos>
 <pos ifSubset="screenRatio:43">0.3 0.88</pos>
 <maxSize>0.20 0.11</maxSize>
-<zIndex>6</zIndex>         
+<zIndex>10</zIndex>         
 </image>    
 
 <image name="md_image">
@@ -755,9 +755,9 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <linearSmooth>true</linearSmooth>
 <reflexion>0.05 0</reflexion>
 <origin>0.0 0.0</origin>      
-<pos>0.10 0.005</pos>
+<pos>0.01 0.005</pos>
 <maxSize>0.20 0.11</maxSize>
-<zIndex>6</zIndex>         
+<zIndex>10</zIndex>         
 <pos ifSubset="screenRatio:43">0.3 0.88</pos>
 </image>   
 
@@ -814,10 +814,10 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <path>./${system.theme}/_inc/system.png</path>
 <reflexion>0.05 0</reflexion>
 <origin>0.0 0.0</origin>      
-<pos>0.2 0.005</pos>
+<pos>0.2 0.02</pos>
 <pos ifSubset="screenRatio:43">0.3 0.88</pos>
 <maxSize>0.20 0.11</maxSize>
-<zIndex>6</zIndex>         
+<zIndex>10</zIndex>         
 </image>
 	  
 <video name="md_video">
