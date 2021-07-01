@@ -59,5 +59,9 @@
 <lang.artworksApply>au cadre</lang.artworksApply>
 <lang.screenApply>à l'écran</lang.screenApply>
 
+<lang.themeBackground>fond</lang.themeBackground>
+<lang.default>par défaut</lang.default>
+<lang.black>noir</lang.black>
+
 </variables>
 </theme>

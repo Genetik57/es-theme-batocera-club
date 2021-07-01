@@ -58,5 +58,9 @@
 <lang.artworksApply>to frame</lang.artworksApply>
 <lang.screenApply>to screen</lang.screenApply>
 
+<lang.themeBackground>background</lang.themeBackground>
+<lang.default>default</lang.default>
+<lang.black>black</lang.black>
+
 </variables>
 </theme>
