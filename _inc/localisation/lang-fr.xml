@@ -59,9 +59,10 @@
 <lang.artworksApply>au cadre</lang.artworksApply>
 <lang.screenApply>à l'écran</lang.screenApply>
 
-<lang.themeBackground>fond</lang.themeBackground>
-<lang.default>par défaut</lang.default>
-<lang.black>noir</lang.black>
+<lang.themeBackground>expérience du clubber</lang.themeBackground>
+<lang.mixed>alterner</lang.mixed>
+<lang.originalWallpaper>rester à létage</lang.originalWallpaper>
+<lang.underground>descendre au sous-sol</lang.underground>
 
 </variables>
 </theme>
