@@ -954,6 +954,13 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <zIndex>10</zIndex>         
 </image>
 
+<text name="gamecarouselLogoText">
+<fontPath>./_inc/fonts/gomarice_no_continue.ttf</fontPath>
+<fontSize>0.04</fontSize>
+<color>f4affc</color>
+<glowColor>ea40e0</glowColor>
+</text>		
+
 </view>
    
  
