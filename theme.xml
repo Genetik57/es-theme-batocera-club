@@ -445,6 +445,14 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <scrollSound>./_inc/wheel.wav</scrollSound>
 </carousel>
 
+<text name="logoText">
+<fontPath>./_inc/fonts/gomarice_no_continue.ttf</fontPath>
+<fontSize>0.05</fontSize>
+<text>${system.fullName}</text>
+<color>f4affc</color>
+<glowColor>ea40e0</glowColor>
+</text>		
+
 <image name="background3" extra="true">
 <linearSmooth>true</linearSmooth>
 <origin>1 0.5</origin>
