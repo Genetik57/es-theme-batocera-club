@@ -39,6 +39,11 @@ Foked by Lorenzolamas of the original theme => see infos below.
 <include name="phosphorePlus" displayName="${lang.phosphorePlus}"/>
 </subset>
 
+<subset name="glass" displayName="${lang.glass}">
+<include name="yes" displayName="${lang.yes}"/>
+<include name="no" displayName="${lang.no}"/>
+</subset>
+
 <subset name="staticEffectApply" displayName="${lang.staticEffectApply}" ifSubset="staticEffect:scanlines|scanlinesFine|scanlinesVertical|scanlinesVerticalFine|crt|phosphore|phosphorePlus">
 <include name="screenApply" displayName="${lang.screenApply}"/>
 <include name="artworksApply" displayName="${lang.artworksApply}"/>
@@ -1395,6 +1400,7 @@ ${lang.releasedYear}: ${system.releaseYear}</text>
 <maxSize>1 99</maxSize>
 <zIndex>7</zIndex>                 
 <path>./_inc/images/overlay.png</path>
+<path ifSubset="glass:no">./_inc/images/overlay2.png</path>
 </image>                    
 
 <image name="white" extra="true">
